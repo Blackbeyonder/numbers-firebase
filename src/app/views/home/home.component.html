@@ -1,1 +1,75 @@
-<p>home works!</p>
+<div class=" flex justify-center items-center mt-5 body">
+    <div class="w50">
+        <ion-card>
+
+            <ion-card-content>
+
+                <ion-item>
+                    <ion-input label="Ingresa el numero" type="number" placeholder="Numero" [(ngModel)]="numberSelected"  (ionInput)="checkLength($event)"></ion-input>
+                </ion-item>
+
+
+                <div class="flex flex-row justify-center my-2">
+                    <ion-button [disabled]="false" (click)="generate()">Generar
+                        <!-- <ion-spinner></ion-spinner> -->
+                    </ion-button>
+
+                </div>
+                <div class="flex flex-col">
+                    <div>Numero ingresado: <span class="num font-bold">{{numberSelected}}</span> </div>
+                    <div>{{ numberToshow.join(', ') }}</div>
+                    <div *ngIf="items.multi3.length > 0">
+                        <div class="text-green">
+                            Multiplos de 3
+                        </div>
+                        <div class="text-green flex flex-row">
+                          <div class="mr-2 font-bold">{{numberSelected}} [3]:</div>
+                          <div class="w90">
+                            {{ items.multi3.join(', ') }}
+                          </div>  
+
+                        </div>
+                    </div>
+
+                    <div *ngIf="items.multi5.length > 0">
+                        <div class="text-red">
+                            Multiplos de 5
+                        </div>
+                        <div class="text-red flex flex-row">
+                          <div class="mr-2 font-bold">{{numberSelected}} [5]:</div>
+                          <div class="w90">
+                            {{ items.multi5.join(', ') }}
+                          </div>  
+
+                        </div>
+                    </div>
+
+                    <div *ngIf="items.multi5.length > 0">
+                        <div class="text-blue">
+                            Multiplos de 7
+                        </div>
+                        <div class="text-blue flex flex-row">
+                          <div class="mr-2 font-bold">{{numberSelected}} [7]:</div>
+                          <div class="w90">{{ items.multi7.join(', ') }}</div>  
+
+                        </div>
+                    </div>
+
+                    <div *ngIf="items.leftovers.length > 0">
+                        <div class="text-gray">
+                            Sobrantes
+                        </div>
+                        <div class="text-gray flex flex-row">
+                          <div class="mr-2 font-bold">{{numberSelected}}:</div>
+                          <div class="w90">{{ items.leftovers.join(', ') }}</div>  
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </ion-card-content>
+        </ion-card>
+    </div>
+
+</div>

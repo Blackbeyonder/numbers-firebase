@@ -1,0 +1,19 @@
+.w50{
+    width: 50%;
+}
+
+.w90{
+    width: 93%;
+}
+
+ion-button:active {
+    opacity: 0.9; /* Hace que el botón se vuelva opaco al hacer clic */
+  }
+
+  .body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: #22c55e;
+    display: flex; /* Asegura que la estructura de flexbox funcione correctamente */
+    flex-direction: column; /* Esto hace que los elementos se apilen verticalmente */
+}
