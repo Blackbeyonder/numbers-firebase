@@ -1,3 +1,10 @@
+# Node 22.12.0
+
+Correr proyecto
+
+npm install
+ng serve
+
 # Numbers-test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
