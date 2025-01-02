@@ -1,9 +1,20 @@
 # Node 22.12.0
 
-Correr proyecto
+## Instalación y Ejecución
 
-npm install
-ng serve
+1. Instala las dependencias del proyecto:
+
+    ```bash
+    npm install
+    ```
+
+2. Ejecuta el servidor de desarrollo:
+
+    ```bash
+    ng serve
+    ```
+
+3. Abre tu navegador y visita [http://localhost:4200](http://localhost:4200) para ver la aplicación.
 
 # Numbers-test
 
