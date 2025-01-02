@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "numbersTest": {
+    "numbers-test": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -106,10 +106,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "numbersTest:build:production"
+              "buildTarget": "numbers-test:build:production"
             },
             "development": {
-              "buildTarget": "numbersTest:build:development"
+              "buildTarget": "numbers-test:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -141,24 +141,24 @@
         "ionic-cordova-serve": {
           "builder": "@ionic/angular-toolkit:cordova-serve",
           "options": {
-            "cordovaBuildTarget": "numbersTest:ionic-cordova-build",
-            "devServerTarget": "numbersTest:serve"
+            "cordovaBuildTarget": "numbers-test:ionic-cordova-build",
+            "devServerTarget": "numbers-test:serve"
           },
           "configurations": {
             "production": {
-              "cordovaBuildTarget": "numbersTest:ionic-cordova-build:production",
-              "devServerTarget": "numbersTest:serve:production"
+              "cordovaBuildTarget": "numbers-test:ionic-cordova-build:production",
+              "devServerTarget": "numbers-test:serve:production"
             }
           }
         },
         "ionic-cordova-build": {
           "builder": "@ionic/angular-toolkit:cordova-build",
           "options": {
-            "browserTarget": "numbersTest:build"
+            "browserTarget": "numbers-test:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "numbersTest:build:production"
+              "browserTarget": "numbers-test:build:production"
             }
           }
         }
